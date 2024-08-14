@@ -1,0 +1,58 @@
+.skeleton {
+  position: relative;
+  width: 100px;
+  height: 200px;
+}
+
+.skull {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.bones {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 150px;
+}
+
+.bone {
+  position: absolute;
+  width: 20px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  animation: dance 2s infinite;
+}
+
+.bone:nth-child(1) {
+  top: 0;
+}
+
+.bone:nth-child(2) {
+  top: 50px;
+}
+
+.bone:nth-child(3) {
+  top: 100px;
+}
+
+@keyframes dance {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
